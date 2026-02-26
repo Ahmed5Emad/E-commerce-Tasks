@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Classic T-Shirt",
+    "price": 25.99,
+    "colors": ["Black", "White", "Navy"],
+    "tags": ["Apparel", "Cotton", "Basic"],
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800",
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "name": "Leather Jacket",
+    "price": 149.99,
+    "colors": ["Brown", "Black"],
+    "tags": ["Outerwear", "Leather", "Stylish"],
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800",
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "name": "Slim Fit Jeans",
+    "price": 45.00,
+    "colors": ["Light Blue", "Dark Blue"],
+    "tags": ["Denim", "Bottoms", "Slim"],
+    "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800",
+    "rating": 4.2
+  },
+  {
+    "id": 4,
+    "name": "Running Shoes",
+    "price": 89.95,
+    "colors": ["Red", "Grey", "Blue"],
+    "tags": ["Footwear", "Sports", "Performance"],
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+    "rating": 4.7
+  },
+  {
+    "id": 5,
+    "name": "Summer Dress",
+    "price": 55.00,
+    "colors": ["Yellow", "Floral"],
+    "tags": ["Dress", "Summer", "Casual"],
+    "image": "https://images.unsplash.com/photo-1495385794356-15371f348c31?w=800",
+    "rating": 4.4
+  },
+  {
+    "id": 6,
+    "name": "Winter Coat",
+    "price": 120.50,
+    "colors": ["Black", "Grey"],
+    "tags": ["Outerwear", "Winter", "Warm"],
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800",
+    "rating": 4.9
+  },
+  {
+    "id": 7,
+    "name": "Yoga Pants",
+    "price": 35.00,
+    "colors": ["Black", "Purple"],
+    "tags": ["Activewear", "Bottoms", "Comfort"],
+    "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800",
+    "rating": 4.3
+  },
+  {
+    "id": 8,
+    "name": "Graphic Hoodie",
+    "price": 40.00,
+    "colors": ["Grey", "Navy"],
+    "tags": ["Apparel", "Casual", "Streetwear"],
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800",
+    "rating": 4.6
+  },
+  {
+    "id": 9,
+    "name": "Formal Shirt",
+    "price": 50.00,
+    "colors": ["White", "Light Blue"],
+    "tags": ["Apparel", "Formal", "Office"],
+    "image": "https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?w=800",
+    "rating": 4.1
+  },
+  {
+    "id": 10,
+    "name": "Casual Shorts",
+    "price": 25.00,
+    "colors": ["Khaki", "Navy"],
+    "tags": ["Bottoms", "Summer", "Casual"],
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800",
+    "rating": 4.0
+  },
+  {
+    "id": 11,
+    "name": "Denim Jacket",
+    "price": 75.00,
+    "colors": ["Blue"],
+    "tags": ["Outerwear", "Denim", "Classic"],
+    "image": "https://images.unsplash.com/photo-1523205771623-e0faa4d2813d?w=800",
+    "rating": 4.5
+  },
+  {
+    "id": 12,
+    "name": "Silk Scarf",
+    "price": 20.00,
+    "colors": ["Red", "Pink", "Gold"],
+    "tags": ["Accessories", "Silk", "Elegance"],
+    "image": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=800",
+    "rating": 4.7
+  },
+  {
+    "id": 13,
+    "name": "Cargo Pants",
+    "price": 50.00,
+    "colors": ["Olive", "Black", "Tan"],
+    "tags": ["Bottoms", "Utility", "Casual"],
+    "image": "https://images.unsplash.com/photo-1517441162151-fa7d6366dd6f?w=800",
+    "rating": 4.3
+  },
+  {
+    "id": 14,
+    "name": "Polo Shirt",
+    "price": 35.00,
+    "colors": ["Green", "Blue", "White"],
+    "tags": ["Apparel", "Sporty", "Semi-Formal"],
+    "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800",
+    "rating": 4.4
+  },
+  {
+    "id": 15,
+    "name": "Sun Hat",
+    "price": 18.00,
+    "colors": ["Straw", "Beige"],
+    "tags": ["Accessories", "Summer", "Protection"],
+    "image": "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?w=800",
+    "rating": 4.2
+  },
+  {
+    "id": 16,
+    "name": "Urban Sneakers",
+    "price": 70.00,
+    "colors": ["White", "Black"],
+    "tags": ["Footwear", "Casual", "Urban"],
+    "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800",
+    "rating": 4.6
+  },
+  {
+    "id": 17,
+    "name": "Luxury Heels",
+    "price": 120.00,
+    "colors": ["Red", "Black"],
+    "tags": ["Footwear", "Formal", "Luxury"],
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800",
+    "rating": 4.8
+  },
+  {
+    "id": 18,
+    "name": "Beach Sandals",
+    "price": 30.00,
+    "colors": ["Tan", "Blue"],
+    "tags": ["Footwear", "Summer", "Beach"],
+    "image": "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=800",
+    "rating": 4.1
+  },
+  {
+    "id": 19,
+    "name": "Classic Leather Boots",
+    "price": 150.00,
+    "colors": ["Brown", "Black"],
+    "tags": ["Footwear", "Outerwear", "Leather"],
+    "image": "https://images.unsplash.com/photo-1520639889313-7272a74b1c73?w=800",
+    "rating": 4.9
+  },
+  {
+    "id": 20,
+    "name": "Canvas Slip-ons",
+    "price": 45.00,
+    "colors": ["Grey", "Navy"],
+    "tags": ["Footwear", "Casual", "Comfort"],
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800",
+    "rating": 4.4
+  }
+]
