@@ -56,6 +56,7 @@ import"./style-DIFPrF_W.js";const y={Black:"#2C3E50",White:"#FFFFFF",Navy:"#001F
           <div class="brand-logo">
              <img src="../../assets/offer-people.png" alt="brand" style="width: 100%; height: 100%; border-radius: 50%;">
           </div>
+
         </div>
         <div class="item-details">
           <h3 class="item-name">${t.name}</h3>

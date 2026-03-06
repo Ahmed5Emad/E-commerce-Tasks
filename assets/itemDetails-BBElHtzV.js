@@ -114,7 +114,7 @@ import"./style-DIFPrF_W.js";function f(){return`
 
     </div>
   `}function $(e){return`
-    <a class="product-card-link" href="/src/pages/Item-Details/Item-Details.html?id=${e.id}">
+    <a class="product-card-link" href="./Item-Details.html?id=${e.id}">
       <div class="product-card">
         <div class="product-image-container">
           <img src="${e.image}" alt="${e.name}" onerror="this.style.opacity='0'">
@@ -169,7 +169,7 @@ import"./style-DIFPrF_W.js";function f(){return`
       <i data-lucide="shopping-cart" style="width: 18px; height: 18px;"></i>
     </div>
     <span class="toast-message">${e}</span>
-  `,lucide.createIcons(),setTimeout(()=>t.classList.add("show"),10),setTimeout(()=>{t.classList.remove("show")},3e3)}function m(e,t,i){let s=JSON.parse(localStorage.getItem("cart")||"[]");const n=`${e.id}-${t}-${i}`,c=s.find(a=>a.cartItemId===n);c?c.quantity=(c.quantity||1)+1:s.push({...e,cartItemId:n,selectedColor:t,selectedSize:i,quantity:1}),localStorage.setItem("cart",JSON.stringify(s)),v(),B(`${e.name} (${t}, ${i}) added to cart!`)}async function k(){const e=document.getElementById("app"),i=await(await fetch("./data.json")).json(),s=new URLSearchParams(window.location.search),n=parseInt(s.get("id"),10),c=n&&i.find(o=>o.id===n)||i[0],a=i.filter(o=>o.id!==c.id).slice(0,4),r=[{name:"assistant",avatar:"./src/assets/offer-people.png",rating:5,text:"Very Good Product"},{name:"assistant",avatar:"./src/assets/offer-people.png",rating:5,text:"Very Good Product"}];e.innerHTML=`
+  `,lucide.createIcons(),setTimeout(()=>t.classList.add("show"),10),setTimeout(()=>{t.classList.remove("show")},3e3)}function m(e,t,i){let s=JSON.parse(localStorage.getItem("cart")||"[]");const n=`${e.id}-${t}-${i}`,c=s.find(a=>a.cartItemId===n);c?c.quantity=(c.quantity||1)+1:s.push({...e,cartItemId:n,selectedColor:t,selectedSize:i,quantity:1}),localStorage.setItem("cart",JSON.stringify(s)),v(),B(`${e.name} (${t}, ${i}) added to cart!`)}async function k(){const e=document.getElementById("app"),i=await(await fetch("../../../data.json")).json(),s=new URLSearchParams(window.location.search),n=parseInt(s.get("id"),10),c=n&&i.find(o=>o.id===n)||i[0],a=i.filter(o=>o.id!==c.id).slice(0,4),r=[{name:"assistant",avatar:"../../assets/offer-people.png",rating:5,text:"Very Good Product"},{name:"assistant",avatar:"../../assets/offer-people.png",rating:5,text:"Very Good Product"}];e.innerHTML=`
     ${f()}
     ${b(c)}
     ${w(a)}
