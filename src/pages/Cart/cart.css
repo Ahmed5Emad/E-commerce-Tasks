@@ -270,15 +270,35 @@
   margin: 10px 0;
 }
 
+.items-detailed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.item-summary-line {
+  font-size: 16px !important;
+  color: var(--gray-text);
+}
+
+.item-name-qty {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
 .summary-actions {
   display: flex;
   gap: 15px;
 }
 
 .btn-continue, .btn-pay, .btn-track, .btn-continue-shopping {
-  padding: 15px 20px;
-  border-radius: 40px;
-  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 25px;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s;

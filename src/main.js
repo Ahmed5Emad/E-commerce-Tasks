@@ -53,7 +53,7 @@ function renderOffer() {
       </div>
       <div class="offer-image">
         <div class="offer-image-inner">
-          <img src="./src/assets/offer-people.png" alt="Offer Image">
+          <img src="./assets/offer-people.png" alt="Offer Image">
         </div>
       </div>
     </section>

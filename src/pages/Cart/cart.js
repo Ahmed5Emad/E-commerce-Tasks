@@ -1,4 +1,3 @@
-
 const COLOR_MAP = {
   Black: '#2C3E50', White: '#FFFFFF', Navy: '#001F5B',
   Brown: '#6B3F21', Red: '#E74C3C', Grey: '#9B9B9B',
@@ -77,9 +76,8 @@ function renderCartItem(item) {
         <div class="item-image-container">
           <img src="${item.image}" alt="${item.name}">
           <div class="brand-logo">
-             <img src="../../assets/offer-people.png" alt="brand" style="width: 100%; height: 100%; border-radius: 50%;">
+             <img src="../../../assets/offer-people.png" alt="brand" style="width: 100%; height: 100%; border-radius: 50%;">
           </div>
-
         </div>
         <div class="item-details">
           <h3 class="item-name">${item.name}</h3>
@@ -116,7 +114,7 @@ function renderEmptyCart() {
     </div>
     <div class="empty-cart-container" style="padding: 50px 0;">
       <div class="empty-state-visual" style="max-width: 516px; margin: 0 auto;">
-        <img src="../../assets/no-orders.png" alt="No orders" style="width: 100%; height: auto;">
+        <img src="../../../assets/no-orders.png" alt="No orders" style="width: 100%; height: auto;">
       </div>
       <h1 class="no-orders-text">No orders</h1>
       <button class="btn-continue-shopping" onclick="window.location.href='../../../index.html'" style="margin-top: 20px; padding: 15px 40px; border-radius: 40px; background: var(--primary); color: white; border: none; font-size: 24px; font-weight: 700; cursor: pointer;">Start Shopping</button>
@@ -130,6 +128,14 @@ function renderCartContent(items) {
   const subtotal = items.reduce((sum, item) => sum + (item.price * (item.quantity || 1)), 0);
   const shipping = 5.99;
   const total = subtotal + shipping;
+
+  // Individual items summary
+  const itemsSummary = items.map(item => `
+    <div class="detail-row item-summary-line">
+      <span class="item-name-qty">${item.name} x${item.quantity || 1}</span>
+      <span class="value">$${(item.price * (item.quantity || 1)).toFixed(2)}</span>
+    </div>
+  `).join('');
 
   return `
     <div class="cart-page-header">
@@ -153,6 +159,10 @@ function renderCartContent(items) {
         </div>
         <div class="summary-section">
           <h2 class="section-title">Payment details</h2>
+          <div class="items-detailed-list">
+            ${itemsSummary}
+          </div>
+          <hr class="summary-divider">
           <div class="detail-row">
             <span>Sub Total Product</span>
             <span class="value">$${subtotal.toFixed(2)}</span>
@@ -286,7 +296,7 @@ async function init() {
       btn.addEventListener('click', () => {
         const id = btn.dataset.id;
         let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-        const item = cart.find(i => i.id === id || i.cartItemId === id);
+        const item = cart.find(i => i.cartItemId === id);
         if (item) {
           item.quantity = (item.quantity || 1) + 1;
           localStorage.setItem('cart', JSON.stringify(cart));
@@ -299,7 +309,7 @@ async function init() {
       btn.addEventListener('click', () => {
         const id = btn.dataset.id;
         let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-        const itemIndex = cart.findIndex(i => i.id === id || i.cartItemId === id);
+        const itemIndex = cart.findIndex(i => i.cartItemId === id);
         if (itemIndex > -1) {
           if ((cart[itemIndex].quantity || 1) > 1) {
             cart[itemIndex].quantity--;
