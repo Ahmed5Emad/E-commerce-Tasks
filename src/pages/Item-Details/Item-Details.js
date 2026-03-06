@@ -3,7 +3,7 @@ function renderHeader() {
   return `
     <header class="header">
       <div class="logo">
-        <a href="/index.html" style="text-decoration: none; color: inherit;">LOGO</a>
+        <a href="../../../index.html" style="text-decoration: none; color: inherit;">LOGO</a>
       </div>
       <div class="search-bar">
         <div class="icon-btn">
@@ -15,7 +15,7 @@ function renderHeader() {
         <div class="icon-btn">
           <i data-lucide="heart" class="icon-nav"></i>
         </div>
-        <a href="/src/pages/Cart/cart.html" class="icon-btn" style="color: inherit;">
+        <a href="../Cart/cart.html" class="icon-btn" style="color: inherit;">
           <i data-lucide="shopping-cart" class="icon-nav"></i>
         </a>
         <div class="icon-btn">

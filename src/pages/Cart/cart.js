@@ -1,3 +1,4 @@
+
 const COLOR_MAP = {
   Black: '#2C3E50', White: '#FFFFFF', Navy: '#001F5B',
   Brown: '#6B3F21', Red: '#E74C3C', Grey: '#9B9B9B',
@@ -12,7 +13,7 @@ function renderHeader() {
   return `
     <header class="header">
       <div class="logo">
-        <a href="/index.html" style="text-decoration: none; color: inherit;">LOGO</a>
+        <a href="../../../index.html" style="text-decoration: none; color: inherit;">LOGO</a>
       </div>
       <div class="search-bar">
         <div class="icon-btn">
@@ -24,7 +25,7 @@ function renderHeader() {
         <div class="icon-btn">
           <i data-lucide="heart" class="icon-nav"></i>
         </div>
-        <a href="/src/pages/Cart/cart.html" class="icon-btn" style="color: inherit;">
+        <a href="./cart.html" class="icon-btn" style="color: inherit;">
           <i data-lucide="shopping-cart" class="icon-nav"></i>
         </a>
         <div class="icon-btn">
@@ -116,7 +117,8 @@ function renderEmptyCart() {
       <div class="empty-state-visual" style="max-width: 516px; margin: 0 auto;">
         <img src="../../assets/no-orders.png" alt="No orders" style="width: 100%; height: auto;">
       </div>
-      <button class="btn-continue-shopping" onclick="window.location.href='/index.html'" style="margin-top: 20px; padding: 15px 40px; border-radius: 40px; background: var(--primary); color: white; border: none; font-size: 24px; font-weight: 700; cursor: pointer;">Start Shopping</button>
+      <h1 class="no-orders-text">No orders</h1>
+      <button class="btn-continue-shopping" onclick="window.location.href='../../../index.html'" style="margin-top: 20px; padding: 15px 40px; border-radius: 40px; background: var(--primary); color: white; border: none; font-size: 24px; font-weight: 700; cursor: pointer;">Start Shopping</button>
     </div>
   `;
 }
@@ -182,7 +184,8 @@ function renderOrderConfirmed() {
       </div>
       <h1 class="confirmed-title">Order Confirmed</h1>
       <div class="confirmed-actions">
-        <button class="btn-continue-shopping" onclick="window.location.href='/index.html'">Continue Shopping</button>
+        <button class="btn-track">Track Your Order</button>
+        <button class="btn-continue-shopping" onclick="window.location.href='../../../index.html'">Continue Shopping</button>
       </div>
     </div>
   `;
@@ -229,7 +232,7 @@ async function init() {
     const continueBtns = document.querySelectorAll('.btn-continue');
     continueBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        window.location.href = '/index.html';
+        window.location.href = '../../../index.html';
       });
     });
 
